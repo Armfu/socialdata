@@ -1,10 +1,10 @@
 <?php
-require_once("../inc/init.php");
+require_once("init.php");
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
 //--- VERIFICATION ADMIN ---//
 if(!internauteEstConnecteEtEstAdmin())
 {
-	header("location:../connexion.php");
+	header("location:connexion.php");
 	exit();
 }
 
@@ -144,4 +144,4 @@ if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == '
 		<input type="submit" value="'; echo ucfirst($_GET['action']) . ' du produit"/>
 	</form>';
 }
-require_once("../inc/bas.inc.php"); ?>
+require_once("bas.inc.php"); ?>
